@@ -65,6 +65,8 @@ def capture(timed,cam):
     os.system(cmd)
     optim = "jpegoptim %s_Cam%d.jpg" % (timed,cam)
     os.system(optim)
+    cp = "sudo cp %s_Cam%d.jpg /media/pi/usb/1/" % (timed,cam)
+	os.system(cp)	##Back up data to USB drive
     
 def transmit(timed,cam)
     sshpass -p '*******' scp /home/pi/Documents/%s.txt.bz2 whale-srv@******:~/Whale_Srv/Incoming/1/" % timed
