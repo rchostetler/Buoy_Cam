@@ -10,7 +10,7 @@ source = "/home/pi/Documents/Data/"
 drive = "/media/pi/usb/1/"
 
 ## Mount USB Drive
-os.system("sudo mount /dev/sda1 /media/pi/usb -o uid=pi,gid=pi")
+#os.system("sudo mount /dev/sda1 /media/pi/usb -o uid=pi,gid=pi")
 
 def imtake():
 	print("Beginning next image set")
